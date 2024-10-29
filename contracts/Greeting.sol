@@ -6,5 +6,9 @@ contract Greeting {
         return "hello world";
     }
 
+    function Greeter(string memory _name) external pure returns (string memory, string memory) {
+        return ("Hello", _name);
+    }
+
     // pure functions: doesn't access the state of the contract
 }
